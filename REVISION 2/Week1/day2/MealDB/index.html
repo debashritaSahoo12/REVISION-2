@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Meals Explorer 🍴</h1>
+    <div class="container">
+      <input type="text" id="searchInput" placeholder="search here name...." />
+      <select id="sortName">
+        <option value="">Sort by Name</option>
+        <option value="asc">Sort A->Z</option>
+        <option value="desc">Sort Z->A</option>
+      </select>
+      <select id="sortArea">
+        <option value="">Sort by Area</option>
+        <option value="asc">Sort A->Z</option>
+        <option value="desc">Sort Z->A</option>
+      </select>
+      <select id="sortCat">
+        <option value="">Sort by Category</option>
+        <option value="asc">Sort A->Z</option>
+        <option value="desc">Sort Z->A</option>
+      </select>
+      <button id="reset">Reset</button>
+    </div>
+    <div id="result"></div>
+  </body>
+  <script src="index.js"></script>
+</html>

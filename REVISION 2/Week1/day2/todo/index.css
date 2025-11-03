@@ -1,0 +1,135 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f7f9fb;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 60px;
+}
+
+/* Main container */
+.container {
+  background: #ffffff;
+  width: 800px;
+  max-width: 90%;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.container h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Input section */
+.taskadd-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#taskInput {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+#taskInput:focus {
+  border-color: #007bff;
+}
+
+/* Add and Clear buttons */
+#addBtn,
+#clearBtn {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#addBtn {
+  background-color: #007bff;
+  color: white;
+}
+
+#addBtn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+#clearBtn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+#clearBtn:hover {
+  background-color: #cc0000;
+  transform: scale(1.05);
+}
+
+/* Task list container */
+#allTasks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual task box */
+#allTasks > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f4f7;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+#allTasks > div:hover {
+  background-color: #e8ebef;
+}
+
+/* Task text */
+#allTasks span {
+  flex: 1;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#allTasks span.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete button */
+.deleteBtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #ff4d4d;
+  transition: transform 0.2s;
+}
+
+.deleteBtn:hover {
+  transform: scale(1.2);
+}
