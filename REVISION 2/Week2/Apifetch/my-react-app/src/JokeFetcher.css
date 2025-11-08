@@ -1,0 +1,79 @@
+.joke-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #0077ff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+.multi-fetch {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
+}
+
+.current-joke {
+  margin-top: 1rem;
+  background: #e6f7ff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.joke-history {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.joke-history li {
+  background: #fff;
+  margin: 0.4rem 0;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border-left: 5px solid #0077ff;
+}
+
+.joke-history li.highlight {
+  background: #fff7d1;
+  border-left-color: #ffb300;
+}
